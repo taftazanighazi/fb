@@ -15,6 +15,9 @@
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
 
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -23,9 +26,9 @@
     </script>
 </head>
 <body>
-    <div id="app">
+    <div id="app" style="background-color:darkcyan ">
         <nav class="navbar navbar-new">
-            <div class="container-fluid">
+            <div class="container-fluid" >
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -37,7 +40,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}" FB
+                    <a class="navbar-brand" href="{{ url('/home') }}"> FB
                     </a>
                 </div>
 
@@ -47,7 +50,7 @@
                         <?php if(Auth::user()){?>
                         <li><a href="{{ url('/beranda') }}">Beranda</a></li>
                         <li><a href="{{ url('/teman') }}">Teman</a></li>
-                        <li><a href="{{ url('/posting') }}"><button type="button" class="btn btn-default"> Posting</button></a></li>
+                        {{--<li><a href="{{ url('/posting') }}"><button type="button" class="btn btn-default"> Posting</button></a></li>--}}
                         <?php
                         }
                         ?>

@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Friend extends Model
 {
-    public $table = 'friends';
+    public $table = 'users_friends';
     protected $primaryKey = 'id';
     protected $fillable =['user_id'];
 
-    public function user()
+    public function users()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsToMany('App\User','users_friends','user_id','friend_id');
     }
 }

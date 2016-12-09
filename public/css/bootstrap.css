@@ -8,9 +8,13 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
+  padding: 0;
+  background: #dddddd;
 }
 article,
 aside,
@@ -1586,6 +1590,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: darkgray;
 }
 @media (min-width: 768px) {
   .container {
